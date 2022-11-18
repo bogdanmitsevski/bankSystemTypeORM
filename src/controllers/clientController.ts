@@ -1,7 +1,7 @@
 import express from 'express';
 import { Client } from '../entities/Client';
 class ClientController {
-    async getName (req:express.Request, res:express.Response) {
+    async createClient (req:express.Request, res:express.Response) {
         const {firstName, lastName, email, cardNumber, balance, middleName} = req.body;
             const newClient = await Client.create({
             first_name:firstName,

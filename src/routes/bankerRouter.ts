@@ -2,6 +2,6 @@ import express from 'express';
 import BankerController from '../controllers/bankerController';
 const router = express.Router();
 
-router.post('/', BankerController.getData);
+router.post('/', BankerController.createBanker);
 
-export default router;
+module.exports = router;
